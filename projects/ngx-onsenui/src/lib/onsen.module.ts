@@ -1,13 +1,4 @@
 export * from '@angular/core';
-export * from './directives/ons-navigator';
-export * from './directives/ons-tabbar';
-export * from './directives/ons-switch';
-export * from './directives/ons-range';
-export * from './directives/ons-select';
-export * from './directives/ons-input';
-export * from './directives/ons-pull-hook';
-export * from './directives/ons-lazy-repeat';
-export * from './directives/ons-splitter';
 
 export * from './ons/notification';
 export * from './ons/platform';
@@ -21,19 +12,19 @@ import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {OnsNavigator} from './directives/ons-navigator';
-import {OnsTabbar, OnsTab} from './directives/ons-tabbar';
-import {OnsSegment} from './directives/ons-segment';
-import {OnsSwitch} from './directives/ons-switch';
-import {OnsRange} from './directives/ons-range';
-import {OnsSelect} from './directives/ons-select';
-import {OnsInput} from './directives/ons-input';
-import {OnsSearchInput} from './directives/ons-search-input';
-import {OnsCheckbox} from './directives/ons-checkbox';
-import {OnsRadio} from './directives/ons-radio';
-import {OnsPullHook} from './directives/ons-pull-hook';
-import {OnsLazyRepeat} from './directives/ons-lazy-repeat';
-import {OnsSplitterSide, OnsSplitterContent} from './directives/ons-splitter';
+import {OnsNavigator} from './ons-navigator.directive';
+import {OnsTabbar, OnsTab} from './ons-tabbar.directive';
+import {OnsSegment} from './ons-segment.directive';
+import {OnsSwitch} from './ons-switch.directive';
+import {OnsRange} from './ons-range.directive';
+import {OnsSelect} from './ons-select.directive';
+import {OnsInput} from './ons-input.directive';
+import {OnsSearchInput} from './ons-search-input.directive';
+import {OnsCheckbox} from './ons-checkbox.directive';
+import {OnsRadio} from './ons-radio.directive';
+import {OnsPullHook} from './ons-pull-hook.directive';
+import {OnsLazyRepeat} from './ons-lazy-repeat.directive';
+import {OnsSplitterSide, OnsSplitterContent} from './ons-splitter.directive';
 
 import {AlertDialogFactory} from './ons/alert-dialog-factory';
 import {PopoverFactory} from './ons/popover-factory';
