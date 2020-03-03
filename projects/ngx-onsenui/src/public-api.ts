@@ -16,4 +16,12 @@ export * from './lib/ons-pull-hook.directive';
 export * from './lib/ons-lazy-repeat.directive';
 export * from './lib/ons-splitter.directive';
 
+export * from './lib/ons/notification';
+export * from './lib/ons/platform';
+export * from './lib/ons/alert-dialog-factory';
+export * from './lib/ons/popover-factory';
+export * from './lib/ons/dialog-factory';
+export * from './lib/ons/modal-factory';
+export * from './lib/ons/params';
+
 export * from './lib/onsen.module';

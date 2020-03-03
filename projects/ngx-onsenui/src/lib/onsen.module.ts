@@ -1,13 +1,5 @@
 export * from '@angular/core';
 
-export * from './ons/notification';
-export * from './ons/platform';
-export * from './ons/alert-dialog-factory';
-export * from './ons/popover-factory';
-export * from './ons/dialog-factory';
-export * from './ons/modal-factory';
-export * from './ons/params';
-
 import {NgModule, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {BrowserModule} from '@angular/platform-browser';
