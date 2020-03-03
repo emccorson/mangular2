@@ -22,7 +22,8 @@
       "ngx-onsenui": [
         "dist/ngx-onsenui/ngx-onsenui",
         "dist/ngx-onsenui"
-      ]
+      ],
+      "onsenui": [ "../../build" ]
     }
   },
   "angularCompilerOptions": {
