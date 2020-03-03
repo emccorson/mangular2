@@ -2,14 +2,20 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../out-tsc/lib",
-    "target": "es2015",
+    "target": "es5",
     "declaration": true,
     "inlineSources": true,
     "types": [],
     "lib": [
       "dom",
       "es2018"
-    ]
+    ],
+    "emitDecoratorMetadata": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "stripInternal": true,
+    "skipLibCheck": true
   },
   "angularCompilerOptions": {
     "skipTemplateCodegen": true,
