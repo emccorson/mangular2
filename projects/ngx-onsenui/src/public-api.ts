@@ -15,6 +15,10 @@ export * from './lib/ons-input.directive';
 export * from './lib/ons-pull-hook.directive';
 export * from './lib/ons-lazy-repeat.directive';
 export * from './lib/ons-splitter.directive';
+export * from './lib/ons-segment.directive';
+export * from './lib/ons-search-input.directive';
+export * from './lib/ons-checkbox.directive';
+export * from './lib/ons-radio.directive';
 
 export * from './lib/ons/notification';
 export * from './lib/ons/platform';

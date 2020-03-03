@@ -13,7 +13,7 @@ import {
 } from '@angular/core';
 import * as ons from 'onsenui';
 
-import {Params} from '../ons/params';
+import {Params} from './ons/params';
 
 /**
  * @element ons-splitter-side
