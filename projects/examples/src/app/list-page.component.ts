@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { OnsNavigator } from 'ngx-onsenui';
 
-import { ListComponent } from './examples/list.component';
+import { ExamplePageComponent } from './example-page.component';
 
 @Component({
-  selector: 'app-list-page',
+  selector: 'ons-page[list-page]',
   templateUrl: './list-page.component.html',
   styleUrls: ['./list-page.component.css']
 })
@@ -12,7 +12,7 @@ export class ListPageComponent {
 
   constructor(private navigator: OnsNavigator) { }
 
-  showListExample() {
-    this.navigator.element.pushPage(ListComponent);
+  showExample() {
+    this.navigator.element.pushPage(ExamplePageComponent);
   }
 }
