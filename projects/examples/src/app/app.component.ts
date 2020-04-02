@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { OnsenModule, onsNotification } from 'ngx-onsenui';
+import { OnsenModule, OnsNavigator } from 'ngx-onsenui';
 import * as ons from 'onsenui';
 
-import { ListComponent } from './examples/list.component';
+import { ListPageComponent } from './list-page.component';
 
 @Component({
   selector: 'app-root',
@@ -11,10 +11,6 @@ import { ListComponent } from './examples/list.component';
 })
 export class AppComponent {
 
-  constructor() {
-  }
+  initialPage = ListPageComponent;
 
-  clicker() {
-    ons.notification.alert('clicked');
-  }
 }

@@ -4,11 +4,13 @@ import { OnsenModule } from 'ngx-onsenui';
 
 import { AppComponent } from './app.component';
 import { ListComponent } from './examples/list.component';
+import { ListPageComponent } from './list-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent
+    ListComponent,
+    ListPageComponent
   ],
   imports: [
     BrowserModule,
