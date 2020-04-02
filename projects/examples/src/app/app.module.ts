@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { OnsenModule } from 'ngx-onsenui';
 
 import { AppComponent } from './app.component';
 import { ListComponent } from './examples/list.component';
@@ -10,7 +11,8 @@ import { ListComponent } from './examples/list.component';
     ListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    OnsenModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
