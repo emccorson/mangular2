@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { OnsNavigator } from 'ngx-onsenui';
 
 import { ExamplePageComponent } from './example-page.component';
+import { ListComponent } from './examples/list.component';
 
 @Component({
   selector: 'ons-page[list-page]',
@@ -13,6 +14,6 @@ export class ListPageComponent {
   constructor(private navigator: OnsNavigator) { }
 
   showExample() {
-    this.navigator.element.pushPage(ExamplePageComponent);
+    this.navigator.element.pushPage(ExamplePageComponent, { data: { example: ListComponent } });
   }
 }

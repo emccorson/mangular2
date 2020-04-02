@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OnsNavigator } from 'ngx-onsenui';
+import { Params } from 'ngx-onsenui';
 
 @Component({
   selector: 'ons-page[example-page]',
@@ -8,6 +8,10 @@ import { OnsNavigator } from 'ngx-onsenui';
 })
 export class ExamplePageComponent {
 
-  constructor() { }
+  myComponent;
+
+  constructor(private params: Params) {
+    this.myComponent = params.data.example;
+  }
 
 }
