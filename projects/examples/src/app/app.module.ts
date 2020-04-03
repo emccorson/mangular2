@@ -3,20 +3,21 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { OnsenModule } from 'ngx-onsenui';
 
 import { AppComponent } from './app.component';
-import { ListComponent } from './examples/list.component';
 import { ListPageComponent } from './list-page.component';
 import { ExamplePageComponent } from './example-page.component';
+
+import { NavigatorModule } from './examples/navigator/navigator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
     ListPageComponent,
     ExamplePageComponent
   ],
   imports: [
     BrowserModule,
-    OnsenModule
+    OnsenModule,
+    NavigatorModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],

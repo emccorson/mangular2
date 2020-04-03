@@ -1,13 +1,14 @@
 import {
-  Component,
-  ViewChild,
   Params,
   OnsNavigator,
-  OnsenModule,
+  OnsenModule
+} from 'ngx-onsenui';
+import {
+  Component,
+  ViewChild,
   NgModule,
   CUSTOM_ELEMENTS_SCHEMA
-} from '../src/ngx-onsenui';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+} from '@angular/core';
 
 @Component({
   selector: 'ons-page',
@@ -48,8 +49,8 @@ export class PageComponent {
     <div class="content">
       <div id="message">{{msg}}</div>
       <div style="text-align: center; margin: 10px">
-      <ons-button id="push" (click)="push(navi)">push</ons-button><br>
-      <ons-button id="push-with-no-animation" (click)="pushWithNoAnimation(navi)">push (no animation)</ons-button>
+      <ons-button id="push" (click)="push()">push</ons-button><br>
+      <ons-button id="push-with-no-animation" (click)="pushWithNoAnimation()">push (no animation)</ons-button>
       </div>
     </div>
   `
@@ -70,22 +71,19 @@ export class DefaultPageComponent {
 }
 
 @Component({
-  selector: 'app',
+  selector: 'ons-page',
   template: `
   <ons-navigator animation="slide" swipeable [page]="page"></ons-navigator>
   `
 })
-export class AppComponent {
+export class NavigatorComponent {
   page = DefaultPageComponent
 }
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, DefaultPageComponent, PageComponent],
+  declarations: [NavigatorComponent, DefaultPageComponent, PageComponent],
   entryComponents: [DefaultPageComponent, PageComponent],
-  bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
-
-platformBrowserDynamic().bootstrapModule(AppModule);
+export class NavigatorModule { }
