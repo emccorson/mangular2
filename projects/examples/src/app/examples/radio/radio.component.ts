@@ -69,7 +69,6 @@ export class RadioComponent{
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [RadioComponent],
-  bootstrap: [RadioComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

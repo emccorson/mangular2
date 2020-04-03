@@ -58,7 +58,6 @@ export class LazyRepeatComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [LazyRepeatComponent],
-  bootstrap: [LazyRepeatComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

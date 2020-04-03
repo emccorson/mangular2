@@ -59,7 +59,6 @@ export class SplitterComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [SplitterComponent, SidePageComponent, ContentPageComponent],
-  bootstrap: [SplitterComponent],
   entryComponents: [SidePageComponent, ContentPageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

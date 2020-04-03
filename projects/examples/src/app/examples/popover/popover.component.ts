@@ -86,7 +86,6 @@ export class PopoverComponent implements OnInit, OnDestroy {
 @NgModule({
   imports: [OnsenModule],
   declarations: [PopoverComponent, MyPopoverComponent],
-  bootstrap: [PopoverComponent],
   entryComponents: [MyPopoverComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

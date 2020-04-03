@@ -210,7 +210,6 @@ export class GridComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [GridComponent],
-  bootstrap: [GridComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

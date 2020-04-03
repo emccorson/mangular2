@@ -66,7 +66,6 @@ export class ToastComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [ToastComponent],
-  bootstrap: [ToastComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

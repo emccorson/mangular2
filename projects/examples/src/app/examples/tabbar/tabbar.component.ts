@@ -80,7 +80,6 @@ export class TabbarComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [TabbarComponent, HomeComponent, PageComponent],
-  bootstrap: [TabbarComponent],
   entryComponents: [HomeComponent, PageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

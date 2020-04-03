@@ -36,7 +36,6 @@ export class SpeedDialComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [SpeedDialComponent],
-  bootstrap: [SpeedDialComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

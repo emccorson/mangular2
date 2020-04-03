@@ -37,7 +37,6 @@ export class IfComponent{
 @NgModule({
   imports: [OnsenModule],
   declarations: [IfComponent],
-  bootstrap: [IfComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

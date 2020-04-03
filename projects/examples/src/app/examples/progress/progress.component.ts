@@ -42,7 +42,6 @@ export class ProgressComponent{
 @NgModule({
   imports: [OnsenModule],
   declarations: [ProgressComponent],
-  bootstrap: [ProgressComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

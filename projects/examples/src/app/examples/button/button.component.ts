@@ -37,7 +37,6 @@ export class ButtonComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [ButtonComponent],
-  bootstrap: [ButtonComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

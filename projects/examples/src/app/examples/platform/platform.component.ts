@@ -50,7 +50,6 @@ export class PlatformComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [PlatformComponent],
-  bootstrap: [PlatformComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

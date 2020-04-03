@@ -74,7 +74,6 @@ export class ModalComponent implements OnInit, OnDestroy {
 @NgModule({
   imports: [OnsenModule],
   declarations: [ModalComponent, MyModalComponent],
-  bootstrap: [ModalComponent],
   entryComponents: [MyModalComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

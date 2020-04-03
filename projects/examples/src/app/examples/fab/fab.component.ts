@@ -58,7 +58,6 @@ export class FabComponent{
 @NgModule({
   imports: [OnsenModule],
   declarations: [FabComponent],
-  bootstrap: [FabComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

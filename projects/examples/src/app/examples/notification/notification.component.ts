@@ -65,7 +65,6 @@ export class NotificationComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [NotificationComponent],
-  bootstrap: [NotificationComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

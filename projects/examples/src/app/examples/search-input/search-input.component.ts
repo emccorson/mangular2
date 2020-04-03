@@ -48,7 +48,6 @@ export class SearchInputComponent{
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [SearchInputComponent],
-  bootstrap: [SearchInputComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

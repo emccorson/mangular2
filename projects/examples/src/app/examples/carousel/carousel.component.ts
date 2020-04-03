@@ -52,7 +52,6 @@ export class CarouselComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [CarouselComponent],
-  bootstrap: [CarouselComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

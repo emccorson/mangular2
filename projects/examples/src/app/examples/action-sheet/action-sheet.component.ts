@@ -75,7 +75,6 @@ export class ActionSheetComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [ActionSheetComponent],
-  bootstrap: [ActionSheetComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

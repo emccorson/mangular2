@@ -46,7 +46,6 @@ export class SwitchComponent {
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [SwitchComponent],
-  bootstrap: [SwitchComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

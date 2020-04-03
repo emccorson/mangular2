@@ -56,7 +56,6 @@ export class SelectComponent {
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [SelectComponent],
-  bootstrap: [SelectComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

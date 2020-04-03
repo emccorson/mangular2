@@ -52,7 +52,6 @@ export class GestureDetectorComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [GestureDetectorComponent],
-  bootstrap: [GestureDetectorComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

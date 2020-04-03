@@ -55,7 +55,6 @@ export class CheckboxComponent{
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [CheckboxComponent],
-  bootstrap: [CheckboxComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

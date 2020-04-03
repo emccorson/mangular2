@@ -65,7 +65,6 @@ export class InputComponent{
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [InputComponent],
-  bootstrap: [InputComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

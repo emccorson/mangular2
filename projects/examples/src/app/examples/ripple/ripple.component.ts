@@ -36,7 +36,6 @@ export class RippleComponent{
 @NgModule({
   imports: [OnsenModule],
   declarations: [RippleComponent],
-  bootstrap: [RippleComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

@@ -52,7 +52,6 @@ export class CardComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [CardComponent],
-  bootstrap: [CardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

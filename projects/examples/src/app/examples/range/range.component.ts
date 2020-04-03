@@ -46,7 +46,6 @@ export class RangeComponent {
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
   declarations: [RangeComponent],
-  bootstrap: [RangeComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

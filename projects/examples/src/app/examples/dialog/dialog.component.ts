@@ -88,7 +88,6 @@ export class DialogComponent implements OnInit, OnDestroy {
 @NgModule({
   imports: [OnsenModule],
   declarations: [DialogComponent, MyDialogComponent],
-  bootstrap: [DialogComponent],
   entryComponents: [MyDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

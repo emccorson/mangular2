@@ -79,7 +79,6 @@ export class PullHookComponent implements AfterViewInit {
 @NgModule({
   imports: [OnsenModule],
   declarations: [PullHookComponent],
-  bootstrap: [PullHookComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

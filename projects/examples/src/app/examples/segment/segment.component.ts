@@ -115,7 +115,6 @@ export class SegmentComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [SegmentComponent, Page1Component, Page2Component, Page3Component],
-  bootstrap: [SegmentComponent],
   entryComponents: [Page1Component, Page2Component, Page3Component],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

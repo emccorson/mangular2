@@ -40,7 +40,6 @@ export class BackButtonComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [BackButtonComponent],
-  bootstrap: [BackButtonComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

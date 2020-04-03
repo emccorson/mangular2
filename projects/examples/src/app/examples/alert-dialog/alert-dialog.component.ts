@@ -82,7 +82,6 @@ export class AlertDialogComponent implements AfterViewInit, OnDestroy {
 @NgModule({
   imports: [OnsenModule],
   declarations: [AlertDialogComponent, MyAlertDialogComponent],
-  bootstrap: [AlertDialogComponent],
   entryComponents: [MyAlertDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

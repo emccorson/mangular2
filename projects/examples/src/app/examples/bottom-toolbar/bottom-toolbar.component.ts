@@ -30,7 +30,6 @@ export class BottomToolbarComponent{
 @NgModule({
   imports: [OnsenModule],
   declarations: [BottomToolbarComponent],
-  bootstrap: [BottomToolbarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

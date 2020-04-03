@@ -33,7 +33,6 @@ export class IconComponent {
 @NgModule({
   imports: [OnsenModule],
   declarations: [IconComponent],
-  bootstrap: [IconComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }
