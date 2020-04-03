@@ -1,17 +1,22 @@
-import { Component } from '@angular/core';
-import { OnsenModule } from 'ngx-onsenui';
+import {
+  Component,
+  ViewChild,
+  NgModule,
+  CUSTOM_ELEMENTS_SCHEMA
+} from '@angular/core';
+import {
+  OnsenModule,
+} from 'ngx-onsenui';
 
 @Component({
-  selector: 'examples-list',
+  selector: 'app',
   template: `
-  <!--
   <ons-page>
     <ons-toolbar>
       <div class="center">List</div>
     </ons-toolbar>
     <div class="background"></div>
     <div class="content">
-    -->
       <ons-list-title>List Title</ons-list-title>
       <ons-list>
         <ons-list-header>
@@ -50,22 +55,16 @@ import { OnsenModule } from 'ngx-onsenui';
           </div>
         </ons-list-item>
       </ons-list>
-
-      <!--
     </div>
   </ons-page>
-  -->
   `
 })
 export class ListComponent {
 }
 
-/*
 @NgModule({
   imports: [OnsenModule],
   declarations: [ListComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ListModule { }
-
-*/
