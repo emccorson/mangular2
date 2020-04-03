@@ -5,7 +5,7 @@ import {
   ViewChild,
   AfterViewInit,
   CUSTOM_ELEMENTS_SCHEMA
-} from '../src/ngx-onsenui';
+} from 'ngx-onsenui';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 @Component({

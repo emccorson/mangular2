@@ -9,7 +9,7 @@ import {
   OnsenModule,
   NgModule,
   CUSTOM_ELEMENTS_SCHEMA
-} from '../src/ngx-onsenui';
+} from 'ngx-onsenui';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 import * as ons from 'onsenui';
