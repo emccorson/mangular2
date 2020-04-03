@@ -1,3 +1,8 @@
 <ons-list>
-  <ons-list-item (click)="showExample()">list example</ons-list-item>
+  <ons-list-item
+    *ngFor="let e of examples"
+    (click)="showExample(e)"
+  >
+    {{e.title}}
+  </ons-list-item>
 </ons-list>

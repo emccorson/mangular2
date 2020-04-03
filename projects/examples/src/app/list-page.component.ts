@@ -12,11 +12,13 @@ import { examples } from './examples';
 })
 export class ListPageComponent {
 
+  examples = examples;
+
   constructor(private navigator: OnsNavigator) {
     examples.forEach(k => console.log(k.title));
   }
 
-  showExample() {
-    this.navigator.element.pushPage(ExamplePageComponent, { data: { example: examples[0].component } });
+  showExample(e) {
+    this.navigator.element.pushPage(ExamplePageComponent, { data: { example: e } });
   }
 }

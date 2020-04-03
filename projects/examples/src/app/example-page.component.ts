@@ -8,10 +8,12 @@ import { Params } from 'ngx-onsenui';
 })
 export class ExamplePageComponent {
 
-  myComponent;
+  title;
+  component;
 
   constructor(private params: Params) {
-    this.myComponent = params.data.example;
+    this.title = params.data.example.title;
+    this.component = params.data.example.component;
   }
 
 }
