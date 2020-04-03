@@ -1,14 +1,16 @@
 import {
-  Component,
   PopoverFactory,
   ViewChild,
   OnInit,
   OnDestroy,
   Params,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   template: `
@@ -55,7 +57,7 @@ class MyPopoverComponent implements OnInit {
   </ons-page>
   `
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class PopoverComponent implements OnInit, OnDestroy {
   private _popover: any;
   private _destroyPopover: Function;
 
@@ -83,8 +85,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, MyPopoverComponent],
-  bootstrap: [AppComponent],
+  declarations: [PopoverComponent, MyPopoverComponent],
+  bootstrap: [PopoverComponent],
   entryComponents: [MyPopoverComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

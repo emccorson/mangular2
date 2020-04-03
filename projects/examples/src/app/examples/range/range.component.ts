@@ -1,10 +1,12 @@
 import {
-  Component,
   OnsRange,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 
 @Component({
@@ -31,7 +33,7 @@ import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
   </ons-page>
   `
 })
-export class AppComponent {
+export class RangeComponent {
   value: string = '10';
   rangeForm: FormControl;
   reactiveStartValue: 89;
@@ -43,8 +45,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [RangeComponent],
+  bootstrap: [RangeComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

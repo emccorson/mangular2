@@ -1,10 +1,12 @@
 import {
-  Component,
   ViewChild,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -38,7 +40,7 @@ import {
   </ons-page>
   `
 })
-export class AppComponent {
+export class CarouselComponent {
   @ViewChild('myCarousel', {static: true}) _carousel: any;
   constructor() { }
 
@@ -49,8 +51,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [CarouselComponent],
+  bootstrap: [CarouselComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

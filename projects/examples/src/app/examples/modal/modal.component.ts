@@ -1,14 +1,16 @@
 import {
-  Component,
   ModalFactory,
   AfterViewInit,
   Params,
   OnInit,
   OnDestroy,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   template: `
@@ -42,7 +44,7 @@ class MyModalComponent {
   </ons-page>
   `
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class ModalComponent implements OnInit, OnDestroy {
   private _modal: any;
   private _destroyModal: Function;
 
@@ -71,8 +73,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, MyModalComponent],
-  bootstrap: [AppComponent],
+  declarations: [ModalComponent, MyModalComponent],
+  bootstrap: [ModalComponent],
   entryComponents: [MyModalComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

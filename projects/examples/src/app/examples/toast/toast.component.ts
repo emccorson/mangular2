@@ -1,5 +1,4 @@
 import {
-  Component,
   ComponentRef,
   AlertDialogFactory,
   ViewChild,
@@ -7,9 +6,12 @@ import {
   AfterViewInit,
   OnDestroy,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 import * as ons from 'onsenui';
 
@@ -44,7 +46,7 @@ import * as ons from 'onsenui';
   </ons-toast>
   `
 })
-export class AppComponent {
+export class ToastComponent {
   animation: string = 'default';
 
   constructor() {
@@ -63,8 +65,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [ToastComponent],
+  bootstrap: [ToastComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

@@ -1,11 +1,13 @@
 import {
-  Component,
   ViewChild,
   Injector,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'ons-page[page]',
@@ -21,8 +23,8 @@ export class Page3Component {
   constructor(private inj: Injector) { }
 
   logIndexes() {
-    console.log('active button index', this.inj.get(AppComponent)._segment.nativeElement.getActiveButtonIndex());
-    console.log('active tab index', this.inj.get(AppComponent)._tabbar.nativeElement.getActiveTabIndex());
+    console.log('active button index', this.inj.get(SegmentComponent)._segment.nativeElement.getActiveButtonIndex());
+    console.log('active tab index', this.inj.get(SegmentComponent)._tabbar.nativeElement.getActiveTabIndex());
   }
 }
 
@@ -40,8 +42,8 @@ export class Page2Component {
   constructor(private inj: Injector) { }
 
   logIndexes() {
-    console.log('active button index', this.inj.get(AppComponent)._segment.nativeElement.getActiveButtonIndex());
-    console.log('active tab index', this.inj.get(AppComponent)._tabbar.nativeElement.getActiveTabIndex());
+    console.log('active button index', this.inj.get(SegmentComponent)._segment.nativeElement.getActiveButtonIndex());
+    console.log('active tab index', this.inj.get(SegmentComponent)._tabbar.nativeElement.getActiveTabIndex());
   }
 }
 
@@ -61,16 +63,16 @@ export class Page1Component {
   constructor(private inj: Injector) { }
 
   changeTab() {
-    this.inj.get(AppComponent)._tabbar.nativeElement.setActiveTab(1);
+    this.inj.get(SegmentComponent)._tabbar.nativeElement.setActiveTab(1);
   }
 
   changeButton() {
-    this.inj.get(AppComponent)._segment.nativeElement.setActiveButton(1);
+    this.inj.get(SegmentComponent)._segment.nativeElement.setActiveButton(1);
   }
 
   logIndexes() {
-    console.log('active button index', this.inj.get(AppComponent)._segment.nativeElement.getActiveButtonIndex());
-    console.log('active tab index', this.inj.get(AppComponent)._tabbar.nativeElement.getActiveTabIndex());
+    console.log('active button index', this.inj.get(SegmentComponent)._segment.nativeElement.getActiveButtonIndex());
+    console.log('active tab index', this.inj.get(SegmentComponent)._tabbar.nativeElement.getActiveTabIndex());
   }
 }
 
@@ -96,7 +98,7 @@ export class Page1Component {
     </ons-page>
   `
 })
-export class AppComponent {
+export class SegmentComponent {
   @ViewChild('segment', {static: true}) _segment: any;
   @ViewChild('tabbar', {static: true}) _tabbar: any;
   page1 = Page1Component;
@@ -112,8 +114,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, Page1Component, Page2Component, Page3Component],
-  bootstrap: [AppComponent],
+  declarations: [SegmentComponent, Page1Component, Page2Component, Page3Component],
+  bootstrap: [SegmentComponent],
   entryComponents: [Page1Component, Page2Component, Page3Component],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

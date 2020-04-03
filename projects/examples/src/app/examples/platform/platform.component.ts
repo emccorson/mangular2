@@ -1,10 +1,12 @@
 import {
-  Component,
   onsPlatform,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 
 @Component({
@@ -39,7 +41,7 @@ import {
   </ons-page>
   `
 })
-export class AppComponent {
+export class PlatformComponent {
   public platform = onsPlatform;
   constructor() { 
   }
@@ -47,8 +49,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [PlatformComponent],
+  bootstrap: [PlatformComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

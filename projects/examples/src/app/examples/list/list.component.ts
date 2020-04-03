@@ -63,8 +63,8 @@ export class ListComponent {
 /*
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [ListComponent],
+  bootstrap: [ListComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

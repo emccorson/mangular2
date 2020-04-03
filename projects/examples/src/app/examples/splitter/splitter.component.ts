@@ -1,9 +1,11 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'ons-page',
@@ -49,15 +51,15 @@ export class SidePageComponent {
   </ons-splitter>
   `
 })
-export class AppComponent {
+export class SplitterComponent {
   sidePage = SidePageComponent;
   contentPage = ContentPageComponent;
 }
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, SidePageComponent, ContentPageComponent],
-  bootstrap: [AppComponent],
+  declarations: [SplitterComponent, SidePageComponent, ContentPageComponent],
+  bootstrap: [SplitterComponent],
   entryComponents: [SidePageComponent, ContentPageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

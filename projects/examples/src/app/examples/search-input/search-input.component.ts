@@ -1,9 +1,11 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 
 @Component({
@@ -34,7 +36,7 @@ import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
   </ons-page>
   `
 })
-export class AppComponent{
+export class SearchInputComponent{
   target: string = '';
   searchControl: FormControl;
 
@@ -45,8 +47,8 @@ export class AppComponent{
 
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [SearchInputComponent],
+  bootstrap: [SearchInputComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

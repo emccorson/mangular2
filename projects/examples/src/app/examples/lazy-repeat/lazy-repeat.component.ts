@@ -1,12 +1,14 @@
 import {
-  Component,
   OnsLazyRepeat,
   ViewChild,
   OnInit,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -31,7 +33,7 @@ import {
   </ons-page>
   `
 })
-export class AppComponent {
+export class LazyRepeatComponent {
   public items: any[];
 
   @ViewChild(OnsLazyRepeat, {static: false}) lazyRepeat: OnsLazyRepeat;
@@ -55,8 +57,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [LazyRepeatComponent],
+  bootstrap: [LazyRepeatComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

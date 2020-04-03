@@ -1,10 +1,12 @@
 import {
-  Component,
   ViewChild,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'ons-page[home]',
@@ -63,7 +65,7 @@ export class PageComponent {
     </ons-page>
   `
 })
-export class AppComponent {
+export class TabbarComponent {
   home = HomeComponent;
   page = PageComponent;
   index = 0.0;
@@ -77,8 +79,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, HomeComponent, PageComponent],
-  bootstrap: [AppComponent],
+  declarations: [TabbarComponent, HomeComponent, PageComponent],
+  bootstrap: [TabbarComponent],
   entryComponents: [HomeComponent, PageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

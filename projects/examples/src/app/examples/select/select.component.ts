@@ -1,10 +1,12 @@
 import {
-  Component,
   OnsSelect,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 
 @Component({
@@ -36,7 +38,7 @@ import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
   </ons-page>
   `
 })
-export class AppComponent {
+export class SelectComponent {
   selectedModifier: string = 'basic';
   modifiers = [
     {value: 'basic', label: 'Basic'},
@@ -53,8 +55,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [SelectComponent],
+  bootstrap: [SelectComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

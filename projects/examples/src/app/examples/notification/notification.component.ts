@@ -1,10 +1,12 @@
 import {
-  Component,
   onsNotification,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -27,7 +29,7 @@ import {
   </ons-page>
   `
 })
-export class AppComponent {
+export class NotificationComponent {
   constructor() { }
 
   alert() {
@@ -62,8 +64,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [NotificationComponent],
+  bootstrap: [NotificationComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

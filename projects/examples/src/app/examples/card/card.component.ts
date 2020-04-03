@@ -1,9 +1,11 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 declare var alert: Function;
 
@@ -38,7 +40,7 @@ declare var alert: Function;
   </ons-page>
     `
 })
-export class AppComponent {
+export class CardComponent {
   constructor() {
   }
 
@@ -49,8 +51,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [CardComponent],
+  bootstrap: [CardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

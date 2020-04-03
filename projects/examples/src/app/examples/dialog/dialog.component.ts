@@ -1,15 +1,16 @@
 import {
-  Component,
   DialogFactory,
   AfterViewInit,
   OnInit,
   OnDestroy,
   Params,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
-
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 @Component({
   template: `
     <ons-dialog animation="none" cancelable #dialog>
@@ -57,7 +58,7 @@ class MyDialogComponent {
   </ons-page>
   `
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class DialogComponent implements OnInit, OnDestroy {
   private _dialog: any;
   private _destroyDialog: Function;
 
@@ -86,8 +87,8 @@ export class AppComponent implements OnInit, OnDestroy {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, MyDialogComponent],
-  bootstrap: [AppComponent],
+  declarations: [DialogComponent, MyDialogComponent],
+  bootstrap: [DialogComponent],
   entryComponents: [MyDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

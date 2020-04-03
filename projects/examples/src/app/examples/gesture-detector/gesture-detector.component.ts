@@ -1,10 +1,12 @@
 import {
-  Component,
   ElementRef,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -28,7 +30,7 @@ import {
   </ons-page>
     `
 })
-export class AppComponent {
+export class GestureDetectorComponent {
   status: string = 'Touch me!';
 
   constructor(elementRef: ElementRef) {
@@ -49,8 +51,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [GestureDetectorComponent],
+  bootstrap: [GestureDetectorComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

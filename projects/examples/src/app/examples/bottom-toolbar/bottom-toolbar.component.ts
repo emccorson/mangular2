@@ -1,9 +1,11 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -22,13 +24,13 @@ import {
   </ons-page>
   `
 })
-export class AppComponent{
+export class BottomToolbarComponent{
 }
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [BottomToolbarComponent],
+  bootstrap: [BottomToolbarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

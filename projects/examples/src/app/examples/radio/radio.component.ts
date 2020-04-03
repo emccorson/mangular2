@@ -1,9 +1,11 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
@@ -51,7 +53,7 @@ import { FormsModule, ReactiveFormsModule, FormControl, FormGroup } from '@angul
   </ons-page>
   `
 })
-export class AppComponent{
+export class RadioComponent{
   fruits: string[] = ['Apples', 'Bananas', 'Oranges'];
   selectedFruit: string = 'Bananas';
   vegetables: string[] = ['Potato', 'Turnip', 'Broccoli'];
@@ -66,8 +68,8 @@ export class AppComponent{
 
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [RadioComponent],
+  bootstrap: [RadioComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

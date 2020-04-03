@@ -1,5 +1,4 @@
 import {
-  Component,
   ComponentRef,
   AlertDialogFactory,
   ViewChild,
@@ -7,9 +6,12 @@ import {
   AfterViewInit,
   OnDestroy,
   OnsenModule,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   template: `
@@ -50,7 +52,7 @@ class MyAlertDialogComponent {
   </ons-page>
   `
 })
-export class AppComponent implements AfterViewInit, OnDestroy {
+export class AlertDialogComponent implements AfterViewInit, OnDestroy {
   private _alert: any;
   private _destroyAlert: Function;
 
@@ -79,8 +81,8 @@ export class AppComponent implements AfterViewInit, OnDestroy {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent, MyAlertDialogComponent],
-  bootstrap: [AppComponent],
+  declarations: [AlertDialogComponent, MyAlertDialogComponent],
+  bootstrap: [AlertDialogComponent],
   entryComponents: [MyAlertDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

@@ -1,11 +1,13 @@
 import {
-  Component,
   OnsenModule,
-  NgModule,
   ViewChild,
   AfterViewInit,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 
 @Component({
   selector: 'app',
@@ -30,7 +32,7 @@ import {
   </ons-page>
   `
 })
-export class AppComponent implements AfterViewInit {
+export class PullHookComponent implements AfterViewInit {
 
   message: string = 'Pull down to refresh';
 
@@ -76,8 +78,8 @@ export class AppComponent implements AfterViewInit {
 
 @NgModule({
   imports: [OnsenModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [PullHookComponent],
+  bootstrap: [PullHookComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }

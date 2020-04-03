@@ -1,11 +1,13 @@
 import {
-  Component,
   OnsSwitch,
   OnsenModule,
   Directive,
-  NgModule,
-  CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+  Component,
+} from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
 
 @Component({
@@ -32,7 +34,7 @@ import { FormsModule, ReactiveFormsModule, FormControl } from '@angular/forms';
   </ons-page>
     `
 })
-export class AppComponent {
+export class SwitchComponent {
   target: boolean = true;
   switchControl: FormControl;
 
@@ -43,8 +45,8 @@ export class AppComponent {
 
 @NgModule({
   imports: [OnsenModule, FormsModule, ReactiveFormsModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
+  declarations: [SwitchComponent],
+  bootstrap: [SwitchComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 class AppModule { }
