@@ -118,5 +118,5 @@ export class SegmentComponent {
   entryComponents: [Page1Component, Page2Component, Page3Component],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

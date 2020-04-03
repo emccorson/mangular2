@@ -38,5 +38,5 @@ export class SpeedDialComponent {
   declarations: [SpeedDialComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

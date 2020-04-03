@@ -44,5 +44,5 @@ export class ProgressComponent{
   declarations: [ProgressComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

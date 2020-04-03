@@ -85,5 +85,5 @@ export class AlertDialogComponent implements AfterViewInit, OnDestroy {
   entryComponents: [MyAlertDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

@@ -48,5 +48,5 @@ export class SwitchComponent {
   declarations: [SwitchComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

@@ -77,5 +77,5 @@ export class ActionSheetComponent {
   declarations: [ActionSheetComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

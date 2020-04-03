@@ -54,5 +54,5 @@ export class GestureDetectorComponent {
   declarations: [GestureDetectorComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

@@ -38,5 +38,5 @@ export class RippleComponent{
   declarations: [RippleComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

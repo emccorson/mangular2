@@ -77,5 +77,5 @@ export class ModalComponent implements OnInit, OnDestroy {
   entryComponents: [MyModalComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

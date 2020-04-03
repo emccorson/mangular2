@@ -89,5 +89,5 @@ export class PopoverComponent implements OnInit, OnDestroy {
   entryComponents: [MyPopoverComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 

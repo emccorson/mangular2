@@ -57,5 +57,5 @@ export class CheckboxComponent{
   declarations: [CheckboxComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-class AppModule { }
+export class AppModule { }
 
