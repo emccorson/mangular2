@@ -212,5 +212,5 @@ export class GridComponent {
   declarations: [GridComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class GridModule { }
 

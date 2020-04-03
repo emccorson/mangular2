@@ -54,5 +54,5 @@ export class CarouselComponent {
   declarations: [CarouselComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class CarouselModule { }
 

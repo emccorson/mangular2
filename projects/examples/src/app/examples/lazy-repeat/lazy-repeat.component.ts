@@ -60,5 +60,5 @@ export class LazyRepeatComponent {
   declarations: [LazyRepeatComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class LazyRepeatModule { }
 

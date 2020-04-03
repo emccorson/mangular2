@@ -39,5 +39,5 @@ export class ButtonComponent {
   declarations: [ButtonComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class ButtonModule { }
 

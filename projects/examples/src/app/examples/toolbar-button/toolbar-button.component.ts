@@ -32,5 +32,5 @@ export class ToolbarButtonComponent {
   declarations: [ToolbarButtonComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class ToolbarButtonModule { }
 

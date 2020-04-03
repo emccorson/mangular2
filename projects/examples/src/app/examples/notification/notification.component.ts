@@ -67,5 +67,5 @@ export class NotificationComponent {
   declarations: [NotificationComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class NotificationModule { }
 

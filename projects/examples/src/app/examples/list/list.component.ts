@@ -66,6 +66,6 @@ export class ListComponent {
   declarations: [ListComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class ListModule { }
 
 */

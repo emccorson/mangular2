@@ -52,5 +52,5 @@ export class PlatformComponent {
   declarations: [PlatformComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class PlatformModule { }
 

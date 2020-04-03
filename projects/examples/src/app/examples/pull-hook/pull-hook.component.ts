@@ -81,5 +81,5 @@ export class PullHookComponent implements AfterViewInit {
   declarations: [PullHookComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class PullHookModule { }
 

@@ -58,5 +58,5 @@ export class SelectComponent {
   declarations: [SelectComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class SelectModule { }
 

@@ -35,5 +35,5 @@ export class IconComponent {
   declarations: [IconComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class IconModule { }
 

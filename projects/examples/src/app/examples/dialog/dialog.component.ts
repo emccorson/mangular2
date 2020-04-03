@@ -91,5 +91,5 @@ export class DialogComponent implements OnInit, OnDestroy {
   entryComponents: [MyDialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class DialogModule { }
 

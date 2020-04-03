@@ -32,5 +32,5 @@ export class BottomToolbarComponent{
   declarations: [BottomToolbarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class BottomToolbarModule { }
 

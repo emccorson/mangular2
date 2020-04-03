@@ -71,5 +71,5 @@ export class RadioComponent{
   declarations: [RadioComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class RadioModule { }
 

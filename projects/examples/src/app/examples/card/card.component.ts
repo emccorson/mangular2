@@ -54,5 +54,5 @@ export class CardComponent {
   declarations: [CardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class CardModule { }
 

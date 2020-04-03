@@ -62,5 +62,5 @@ export class SplitterComponent {
   entryComponents: [SidePageComponent, ContentPageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class SplitterModule { }
 

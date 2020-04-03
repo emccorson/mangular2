@@ -68,5 +68,5 @@ export class ToastComponent {
   declarations: [ToastComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class ToastModule { }
 

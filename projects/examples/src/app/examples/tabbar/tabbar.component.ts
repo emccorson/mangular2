@@ -83,5 +83,5 @@ export class TabbarComponent {
   entryComponents: [HomeComponent, PageComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class TabbarModule { }
 

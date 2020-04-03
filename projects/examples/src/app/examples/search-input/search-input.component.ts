@@ -50,5 +50,5 @@ export class SearchInputComponent{
   declarations: [SearchInputComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule { }
+export class SearchInputModule { }
 
