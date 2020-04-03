@@ -10,7 +10,6 @@ import {
   NgModule,
   CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 import * as ons from 'onsenui';
 
@@ -70,4 +69,3 @@ export class AppComponent {
 })
 class AppModule { }
 
-platformBrowserDynamic().bootstrapModule(AppModule);

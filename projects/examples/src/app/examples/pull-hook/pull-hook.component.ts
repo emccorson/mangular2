@@ -6,7 +6,6 @@ import {
   AfterViewInit,
   CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 @Component({
   selector: 'app',
@@ -83,4 +82,3 @@ export class AppComponent implements AfterViewInit {
 })
 class AppModule { }
 
-platformBrowserDynamic().bootstrapModule(AppModule);

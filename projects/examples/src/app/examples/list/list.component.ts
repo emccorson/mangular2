@@ -69,5 +69,4 @@ export class ListComponent {
 })
 class AppModule { }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
 */

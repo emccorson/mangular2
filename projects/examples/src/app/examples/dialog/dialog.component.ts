@@ -9,7 +9,6 @@ import {
   NgModule,
   CUSTOM_ELEMENTS_SCHEMA
 } from 'ngx-onsenui';
-import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
 @Component({
   template: `
@@ -94,4 +93,3 @@ export class AppComponent implements OnInit, OnDestroy {
 })
 class AppModule { }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
