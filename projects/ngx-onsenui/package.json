@@ -1,6 +1,10 @@
 {
   "name": "ngx-onsenui",
   "version": "0.0.1",
+  "scripts": {
+    "build": "npm run build-dist:schematics",
+    "build-dist:schematics": "echo \"Building schematics...\\n\" && ../../node_modules/.bin/tsc -p schematics/tsconfig.json && rsync -a schematics/src/. ../../dist/ngx-onsenui/schematics --include *.d.ts --include files/**/*.ts --exclude *.ts"
+  },
   "peerDependencies": {
     "@angular/common": "^9.0.3",
     "@angular/core": "^9.0.3",
