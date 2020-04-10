@@ -32,7 +32,7 @@ import {
             isChrome() => {{platform.isChrome()}}
           </li>
           <li>
-            getMobileOS() => {{platform.getMobileOS()}}
+            <!-- getMobileOS() => {{platform.getMobileOS()}} -->
           </li>
         </ul>
 
